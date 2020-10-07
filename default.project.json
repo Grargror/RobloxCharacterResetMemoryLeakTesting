@@ -1,0 +1,14 @@
+{
+  "name": "RobloxMemoryLeakTesting",
+  "servePlaceIds": [0],
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+
+      "TestInitializer": {
+        "$path": "src/TestInitializer"
+      }
+    }
+  }
+}
