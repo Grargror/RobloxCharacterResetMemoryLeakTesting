@@ -1,6 +1,6 @@
 {
   "name": "RobloxMemoryLeakTesting",
-  "servePlaceIds": [0],
+  "servePlaceIds": [95206881],
   "tree": {
     "$className": "DataModel",
     "ServerScriptService": {

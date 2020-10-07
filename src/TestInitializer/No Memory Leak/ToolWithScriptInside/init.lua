@@ -28,6 +28,9 @@ Fix:
 ------------------------
 local toolToClone = Instance.new("Tool")
 toolToClone.Name = "TestTool"
+local handle = Instance.new("Part")
+handle.Name = "Handle"
+handle.Parent = toolToClone
 
 local toolScriptToClone = script:FindFirstChild("ToolScript")
 toolScriptToClone.Disabled = true
@@ -47,6 +50,10 @@ function module.onPlayerAdded(player)
 			
 			local toolScript = toolScriptToClone:Clone()
 			toolScript.Parent = tool
+
+			-- Parenting to a descendant also disconnects properly
+			-- toolScript.Parent = tool.Handle 
+
 			toolScript.Disabled = false
 		end
 	end)
