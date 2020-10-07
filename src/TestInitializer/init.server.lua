@@ -17,7 +17,7 @@ local testScriptsToRun = {
 	},
 	["No Memory Leak"] = {
 		PlayerBackpack = false,
-		ToolWithScriptInside = true,
+		ToolWithScriptInside = false,
 		ScreenGuiConnectionTest = false
 	}
 }
